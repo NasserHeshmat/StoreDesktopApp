@@ -1,0 +1,124 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+@font-face {
+    font-family: Almarai;
+	 src: url("Almarai-Regular.ttf");
+}
+#showItemsPane,#sarfPane,#addToItemPane,#addItemPane,#loginPane,#msrofPane{
+	-fx-background-color: rgb(92, 107, 115) ;
+	
+	
+}
+
+
+#viewLabel,#addItemLabel,#sarfLabel,#addToItemLabel,#msrofLabel {
+	-fx-text-fill: white  ;
+	-fx-stroke: white;
+	-fx-background-color: rgba(11, 32, 39,0.1) ;
+	-fx-font-size: 350%;
+}
+
+#addtIemNameLabel,#addItemQuantitiyLabel,#sarfQuantityLabel,#sarfNameLabel,#addToItemQuantityLabel,#addToItemNameLabel
+,#sarfDateLabel,#sarfDepLabel,#addtIemCompanyLabel,#addToItemDateLabel,#addtIemTypeLabel{
+	-fx-text-fill: white  ;
+	-fx-stroke: white;
+	-fx-background-color: rgba(11, 32, 39,0.1) ;
+	-fx-font-size: 170%;
+	-fx-text-alignment: right ;
+}
+
+#rightMenu{
+	-fx-background-color: rgba(37, 50, 55) ;
+}
+
+.button{
+	-fx-background-color: rgb(246, 241, 209) ;
+	-fx-text-fill: rgb(11, 32, 39) ;
+	
+	-fx-font-size: 185%;
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 2);
+}
+
+#allItemsBtn,#allItemsBtn1{
+	-fx-background-color: rgb(72, 202, 228) ;
+}
+
+.choice-box > .label,.choice-box .menu-item > .label {
+
+	-fx-text-fill: rgb(11, 32, 39) ;
+	
+	-fx-font-size: 185%;
+
+}
+
+#square{
+	-fx-background-color:  rgb(246, 241, 209) ;
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 2);
+	-fx-background-radius: 50px;
+	
+}
+
+#loginLabel{
+	-fx-font-size: 300%;
+	-fx-background-color:  rgba(246, 241, 209,0) ;
+	-fx-text-fill: rgb(37, 50, 55) ;
+	-fx-stroke:  rgb(37, 50, 55);
+	
+}
+
+#passwordTextArea,#usernameTextArea{
+	-fx-background-color:  white ;
+	-fx-stroke:  white;
+
+}
+
+#passwordLabel,#usernameLabel,#searchBox,#searchItems{
+	-fx-font-size: 133%;
+}
+
+#title{
+		-fx-font-family: Almarai;
+	-fx-font-size: 42;
+		-fx-text-alignment: right ;
+}
+
+#wrongDataMessage{
+	-fx-font-size: 100%;
+	-fx-background-color:  rgba(239, 35, 60,0.1) ;
+	-fx-text-fill: rgb(239, 35, 60) ;
+	-fx-stroke:  rgb(239, 35, 60);
+	-fx-opacity: 0;
+}
+#loginBtn{
+	-fx-font-size: 150%;
+	-fx-background-color:  rgb(72, 202, 228) ;
+	-fx-text-fill: rgb(37, 50, 55) ;
+	-fx-stroke:  rgb(37, 50, 55);
+}
+
+#dataTable,#col1,#col2,#col3,#col4,#msrofTable,#msrofDate,#msrofDep,#msrofQuantity,#msrofName,#col5{
+	-fx-font-size: 150%;
+	 -fx-alignment: CENTER;
+}
+
+#exitBtn {
+	-fx-background-radius: 15px;
+	-fx-background-color:  rgb(230, 57, 70) ;
+	-fx-text-fill: white ;
+	
+	-fx-font-size: 135%;
+}
+
+#dialogVbox{
+	-fx-text-alignment: right ;
+}
+
+.text {
+	-fx-font-family: Almarai;
+	-fx-font-scale: 200;
+	
+	-fx-stroke-type: centered ;
+	-fx-font-smoothing-type:gray  ; 
+	-fx-stroke-width: 20%;
+}
+

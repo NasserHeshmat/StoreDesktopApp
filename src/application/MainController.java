@@ -502,7 +502,7 @@ public class MainController {
 	
 	public void msrofSearch() {
 
-		FilteredList<msrofColumn> result = msrofData.filtered(item -> item.name.startsWith(searchBox.getText()) || item.dep.startsWith(searchBox.getText()));
+		FilteredList<msrofColumn> result = msrofData.filtered(item -> item.name.startsWith(searchBox.getText()) || item.dep.contains(searchBox.getText()));
 
 		 msrofTable.setItems(result);
 	}
