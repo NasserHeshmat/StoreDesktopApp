@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="C:/Users/Nasser/Desktop/test/store.jar"/>
+    <options buildIfNeeded="true" compress="false" descriptionLocation="/StoreDesktopApp/export.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="true" overwrite="true" saveDescription="true" storeRefactorings="true" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" mainClassHandleIdentifier="=StoreDesktopApp/src&lt;application{Main.java[Main" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="false" exportJavaFiles="true" exportOutputFolder="true">
+        <file path="/StoreDesktopApp/.gitattributes"/>
+        <file path="/StoreDesktopApp/.project"/>
+        <file path="/StoreDesktopApp/export.jardesc"/>
+        <file path="/StoreDesktopApp/build.fxbuild"/>
+        <file path="/StoreDesktopApp/data.csv"/>
+        <file path="/StoreDesktopApp/README.md"/>
+        <javaElement handleIdentifier="=StoreDesktopApp/src"/>
+        <folder path="/StoreDesktopApp/resources"/>
+        <file path="/StoreDesktopApp/data.txt"/>
+        <file path="/StoreDesktopApp/.classpath"/>
+    </selectedElements>
+</jardesc>

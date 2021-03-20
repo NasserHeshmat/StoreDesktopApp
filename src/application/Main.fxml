@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="727.0" prefWidth="1185.0" snapToPixel="false" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <AnchorPane fx:id="rightMenu" layoutX="926.0" layoutY="1.0" prefHeight="648.0" prefWidth="258.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="926.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutY="206.0" mnemonicParsing="false" onAction="#showSarfPane" prefHeight="80.0" prefWidth="259.0" text="صرف" textAlignment="CENTER" />
+            <Button layoutY="286.0" mnemonicParsing="false" onAction="#showMsrofPane" prefHeight="80.0" prefWidth="259.0" text="تم صرفه" textAlignment="CENTER" />
+            <Button layoutY="367.0" mnemonicParsing="false" onAction="#showAddItemPane" prefHeight="80.0" prefWidth="259.0" text="إضافة صنف" textAlignment="CENTER" />
+            <Button layoutY="447.0" mnemonicParsing="false" onAction="#showAddToItemPane" prefHeight="80.0" prefWidth="259.0" text="إضافة إلى صنف" textAlignment="CENTER" />
+            <Button layoutY="528.0" mnemonicParsing="false" onAction="#showShowItemsPane" prefHeight="80.0" prefWidth="259.0" text="عرض الاصناف" textAlignment="CENTER" />
+            <ImageView fx:id="logo" fitHeight="169.0" fitWidth="183.0" layoutX="40.0" pickOnBounds="true" />
+            <Label fx:id="title" alignment="CENTER" layoutX="59.0" layoutY="137.0" prefHeight="46.0" prefWidth="145.0" text="المخزن" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="2.0" prefHeight="648.0" prefWidth="934.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane fx:id="sarfPane" layoutY="80.0" prefHeight="648.0" prefWidth="934.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ChoiceBox fx:id="sarfChoiceBox" layoutX="377.0" layoutY="183.0" prefHeight="41.0" prefWidth="292.0" />
+                  <Button layoutX="224.0" layoutY="522.0" mnemonicParsing="false" onAction="#sarf" prefHeight="46.0" prefWidth="112.0" text="صرف" />
+                  <Spinner fx:id="sarfSpinner" layoutX="558.0" layoutY="275.0" prefHeight="37.0" prefWidth="112.0" />
+                  <Label fx:id="sarfLabel" alignment="CENTER_RIGHT" layoutX="-1.0" layoutY="-4.0" prefHeight="109.0" prefWidth="934.0" text="صرف" textAlignment="RIGHT">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                     <padding>
+                        <Insets right="30.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="sarfNameLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="757.0" layoutY="185.0" prefHeight="37.0" prefWidth="125.0" text="اسم الصنف :" />
+                  <Label fx:id="sarfQuantityLabel" alignment="CENTER" contentDisplay="RIGHT" layoutX="757.0" layoutY="275.0" prefHeight="37.0" prefWidth="125.0" text="صرف عدد :" textAlignment="CENTER">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sarfDepLabel" alignment="CENTER" contentDisplay="RIGHT" layoutX="757.0" layoutY="367.0" prefHeight="37.0" prefWidth="125.0" text="القسم :" textAlignment="CENTER">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="sarfDepTextField" layoutX="377.0" layoutY="365.0" prefHeight="41.0" prefWidth="292.0" />
+                  <Label fx:id="sarfDateLabel" alignment="CENTER" contentDisplay="RIGHT" layoutX="757.0" layoutY="442.0" prefHeight="37.0" prefWidth="125.0" text="تاريخ الصرف :" textAlignment="CENTER">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="sarfDateField" layoutX="377.0" layoutY="440.0" prefHeight="41.0" prefWidth="292.0" />
+               </children>
+            </Pane>
+            <Pane fx:id="addToItemPane" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="268.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="addToItemLabel" alignment="CENTER_RIGHT" prefHeight="102.0" prefWidth="930.0" text="إضافة إلى صنف">
+                     <padding>
+                        <Insets right="30.0" />
+                     </padding>
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="addToItemChoiceBox" layoutX="351.0" layoutY="185.0" prefHeight="41.0" prefWidth="319.0" />
+                  <Button layoutX="239.0" layoutY="450.0" mnemonicParsing="false" onAction="#addToItem" prefHeight="46.0" prefWidth="112.0" text="اضافة" />
+                  <Spinner fx:id="addToItemSpinner" layoutX="558.0" layoutY="270.0" prefHeight="37.0" prefWidth="112.0" />
+                  <Label fx:id="addToItemNameLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="757.0" layoutY="185.0" prefHeight="37.0" prefWidth="125.0" text="اسم الصنف :" />
+                  <Label fx:id="addToItemQuantityLabel" alignment="CENTER" layoutX="757.0" layoutY="270.0" prefHeight="37.0" prefWidth="125.0" text="اضافة عدد :" />
+                  <Label fx:id="addToItemDateLabel" alignment="CENTER" layoutX="757.0" layoutY="347.0" prefHeight="37.0" prefWidth="125.0" text="تاريخ الإضافة :" />
+                  <DatePicker fx:id="addtoItemDatePicker" layoutX="351.0" layoutY="345.0" prefHeight="41.0" prefWidth="319.0" />
+               </children></Pane>
+            <Pane fx:id="addItemPane" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="930.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="addItembtn" layoutX="204.0" layoutY="510.0" mnemonicParsing="false" onAction="#addItem" prefHeight="46.0" prefWidth="112.0" text="اضافة" />
+                  <TextArea fx:id="addItemTextArea" layoutX="353.0" layoutY="182.0" prefHeight="45.0" prefWidth="325.0" />
+                  <Label fx:id="addtIemNameLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="757.0" layoutY="185.0" prefHeight="37.0" prefWidth="125.0" text="اسم الصنف :" />
+                  <Label fx:id="addItemQuantitiyLabel" alignment="CENTER" layoutX="757.0" layoutY="270.0" prefHeight="37.0" prefWidth="125.0" text="العدد الموجود :" />
+                  <Spinner fx:id="addItemSpinner" layoutX="558.0" layoutY="270.0" prefHeight="37.0" prefWidth="112.0" />
+                  <Label fx:id="addItemLabel" alignment="CENTER_RIGHT" prefHeight="102.0" prefWidth="930.0" text="اضافة صنف">
+                     <padding>
+                        <Insets right="30.0" />
+                     </padding>
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="addItemCompanyTextArea" layoutX="350.0" layoutY="354.0" prefHeight="45.0" prefWidth="325.0" />
+                  <Label fx:id="addtIemCompanyLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="754.0" layoutY="357.0" prefHeight="37.0" prefWidth="125.0" text="اسم الشركة :" />
+                  <Label fx:id="addtIemTypeLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="754.0" layoutY="430.0" prefHeight="37.0" prefWidth="125.0" text="النوع :" />
+                  <ChoiceBox fx:id="addItemTypeChoiceBox" layoutX="524.0" layoutY="428.0" prefHeight="41.0" prefWidth="151.0" />
+               </children></Pane>
+            <Pane fx:id="msrofPane" layoutX="-1.0" layoutY="-1.0" prefHeight="648.0" prefWidth="935.0">
+               <children>
+                  <Label fx:id="msrofLabel" alignment="CENTER_RIGHT" ellipsisString="" lineSpacing="2.0" prefHeight="102.0" prefWidth="930.0" text="ما تم صرفه">
+                     <padding>
+                        <Insets right="30.0" />
+                     </padding>
+                  </Label>
+                  <TableView fx:id="msrofTable" editable="true" layoutX="65.0" layoutY="149.0" prefHeight="522.0" prefWidth="815.0">
+                     <columns>
+                        <TableColumn fx:id="msrofDate" prefWidth="193.0" text="تاريخ الصرف" />
+                        <TableColumn fx:id="msrofDep" prefWidth="211.0" text="القسم المصروف إليه" />
+                        <TableColumn fx:id="msrofQuantity" prefWidth="205.0" sortable="false" text="العدد" />
+                        <TableColumn fx:id="msrofName" prefWidth="205.0" text="الصنف" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="allItemsBtn1" layoutX="767.0" layoutY="106.0" mnemonicParsing="false" onAction="#showMsrofall" text="عرض الكل" />
+                  <Button fx:id="sabtBtn1" layoutX="704.0" layoutY="106.0" mnemonicParsing="false" onAction="#showMsrofSabt" text="ثابت" />
+                  <Button fx:id="motghirBtn1" layoutX="630.0" layoutY="106.0" mnemonicParsing="false" onAction="#showMsrofMotghir" text="متغير" />
+                  <StackPane layoutX="77.0" layoutY="42.0" prefHeight="34.0" prefWidth="345.0" />
+ <TextField fx:id="searchBox" alignment="CENTER_RIGHT" layoutX="65.0" layoutY="104.0" onKeyReleased="#msrofSearch" prefHeight="37.0" prefWidth="259.0" promptText="بحث" styleClass="transparent" />
+               </children>
+            </Pane>
+            <Pane fx:id="showItemsPane" prefHeight="200.0" prefWidth="268.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="viewLabel" alignment="CENTER_RIGHT" ellipsisString="" lineSpacing="2.0" prefHeight="102.0" prefWidth="930.0" text="عرض الاصناف">
+                     <padding>
+                        <Insets right="30.0" />
+                     </padding>
+                  </Label>
+                  <TableView fx:id="dataTable" editable="true" layoutX="65.0" layoutY="143.0" prefHeight="522.0" prefWidth="815.0">
+                     <columns>
+                        <TableColumn fx:id="col5" prefWidth="112.0" sortable="false" text="حذف صنف" />
+                        <TableColumn fx:id="col4" prefWidth="176.0" sortable="false" text="تاريخ الإضافة" />
+                        <TableColumn fx:id="col3" prefWidth="168.0" text="الشركة" />
+                        <TableColumn fx:id="col2" prefWidth="174.0" sortable="false" text="العدد" />
+                        <TableColumn fx:id="col1" prefWidth="184.0" text="الصنف" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="allItemsBtn" layoutX="766.0" layoutY="102.0" mnemonicParsing="false" onAction="#showAllItems" text="عرض الكل" />
+                  <Button fx:id="sabtBtn" layoutX="703.0" layoutY="102.0" mnemonicParsing="false" onAction="#showSabtItems" text="ثابت" />
+                  <Button fx:id="motghirBtn" layoutX="629.0" layoutY="102.0" mnemonicParsing="false" onAction="#showMotghirItems" text="متغير" />
+                  <TextField fx:id="searchItems" alignment="CENTER_RIGHT" layoutX="65.0" layoutY="102.0" onKeyReleased="#itemsSearch" prefHeight="37.0" prefWidth="259.0" promptText="بحث" styleClass="transparent" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="exitBtn" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="17.0" mnemonicParsing="false" onAction="#exitApp" prefHeight="37.0" prefWidth="72.0" text="خروج" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="17.0" />
+      <AnchorPane fx:id="loginPane" prefHeight="727.0" prefWidth="1185.0">
+         <children>
+            <Label fx:id="sarfQuantityLabel" alignment="CENTER" prefHeight="272.0" prefWidth="1185.0" />
+            <Rectangle fx:id="square" arcHeight="5.0" arcWidth="5.0" fill="#ffffffe0" height="450.0" layoutX="343.0" layoutY="139.0" opacity="0.89" stroke="TRANSPARENT" strokeType="INSIDE" width="500.0" AnchorPane.rightAnchor="342.0" />
+            <Button fx:id="loginBtn" layoutX="535.0" layoutY="503.0" mnemonicParsing="false" onAction="#login" prefHeight="51.0" prefWidth="132.0" text="دخول" />
+            <Label fx:id="usernameLabel" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="632.0" layoutY="304.0" prefHeight="37.0" prefWidth="125.0" text="اسم المستخدم :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="passwordLabel" alignment="CENTER_RIGHT" layoutX="632.0" layoutY="395.0" prefHeight="37.0" prefWidth="125.0" text="كلمة المرور :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="loginLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="489.0" layoutY="180.0" prefHeight="102.0" prefWidth="223.0" text="تسجيل الدخول">
+               <font>
+                  <Font name="Stencil" size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="wrongDataMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="482.0" layoutY="283.0" prefHeight="29.0" prefWidth="223.0" text="اسم المستخدم او كلمة المرور غير صحيحة">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordTextArea" layoutX="446.0" layoutY="427.0" onAction="#login" prefHeight="45.0" prefWidth="313.0" />
+            <TextField fx:id="usernameTextArea" layoutX="445.0" layoutY="341.0" onAction="#login" prefHeight="46.0" prefWidth="313.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
